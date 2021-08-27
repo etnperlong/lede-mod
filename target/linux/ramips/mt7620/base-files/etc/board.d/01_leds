@@ -32,6 +32,11 @@ asus,rt-n12p)
 	ucidef_set_led_netdev "wan" "wan" "green:wan" eth0.2
 	ucidef_set_led_netdev "wifi_led" "wifi" "green:air" "wlan0"
 	;;
+mercury,mw305r-v1)
+	ucidef_set_led_netdev "lan" "lan" "$boardname:yellow:lan" eth0.1
+	ucidef_set_led_netdev "wan" "wan" "$boardname:yellow:wan" eth0.2
+	set_wifi_led "$boardname:yellow:air"
+	;;
 asus,rt-n14u)
 	ucidef_set_led_netdev "lan" "lan" "blue:lan" eth0.1
 	ucidef_set_led_netdev "wan" "wan" "blue:wan" eth0.2

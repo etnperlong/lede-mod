@@ -110,6 +110,15 @@ define Device/asus_rt-n12p
 endef
 TARGET_DEVICES += asus_rt-n12p
 
+define Device/mercury_mw305r-v1
+  SOC := mt7620n
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Mercury
+  DEVICE_MODEL := MW305R V1
+  SUPPORTED_DEVICES += mw305r-v1
+endef
+TARGET_DEVICES += mercury_mw305r-v1
+
 define Device/asus_rt-n14u
   SOC := mt7620n
   IMAGE_SIZE := 16064k
